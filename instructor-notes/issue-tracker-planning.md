@@ -7,3 +7,40 @@ can create them.
 
 
 
+## Adding Issues
+
+Operation: "Add an Issue"
+Operands:
+    - Software?
+    - Description of the problem
+    - Who is creating this issue? -- Who is almost always from the Authorization header in the request.
+
+```json
+{
+    "software": "Excel",
+    "description": "I want clippy back!"
+}
+```
+
+If you did it right, you'll get back something like:
+
+Also include who to contact if it is an urgent matter.
+
+
+```json
+{
+    "id": "some-unique-id",
+    "software": "Excel",
+    "description": "Broke!",
+    "createdOn": "2024-timestamp....",
+    "status": "Created",
+    "support": "http://localhost:1337/issues/3739797393/support"
+}
+
+```
+
+"During business hours (when we are open) it is always Joe."
+"We are going to move to a system where that job is rotated amongst people"
+"Outside of business hours, it is our contracted company, Support Pros, and you should give them that email and phone number"
+
+Cohesion ("Temporal Cohesion")
